@@ -33,14 +33,17 @@ $scope.check=function(){
     //checking empty input
     $scope.message="Please enter data first";
 	$scope.class="text-danger";
+	$scope.class1="class1";
   }
   else if (length<=3) {
     $scope.message="Enjoy!";
 	$scope.class="text-success";
+	$scope.class1="class2";
     }
   else {
     $scope.message="Too much!";
 	$scope.class="text-danger";
+	$scope.class1="class1";
   }
 
 

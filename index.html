@@ -9,15 +9,18 @@
 
     <style>
       .message { font-size: 1.3em; }
+	  .class1{border-color:#a94442;}
+	  .class2{border-color:#3c763d;}
+	  
     </style>
   </head>
 <body ng-controller="Mycontrol">
    <div class="container">
      <h1 class="text-primary">Lunch Checker</h1>
 		<p class="text-danger">/* I am  considering an empty item, i.e., , , as an item towards to the count */</p>
-         <div class="form-group">
+         <div class="form-group" >
              <input id="lunch-menu" type="text"
-             placeholder="list comma separated dishes you usually have for lunch" class="form-control" ng-model="inputlunch">
+             placeholder="list comma separated dishes you usually have for lunch" class="form-control" ng-model="inputlunch" ng-class="class1">
          </div>
          <div class="form-group">
              <button class="btn btn-primary" ng-click="check()">Check If Too Much</button>
