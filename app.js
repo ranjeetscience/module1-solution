@@ -32,12 +32,15 @@ $scope.check=function(){
   if ($scope.inputlunch.length === 0 || typeof $scope.inputlunch === 'undefined') {
     //checking empty input
     $scope.message="Please enter data first";
+	$scope.class="text-danger";
   }
   else if (length<=3) {
     $scope.message="Enjoy!";
+	$scope.class="text-success";
     }
   else {
     $scope.message="Too much!";
+	$scope.class="text-danger";
   }
 
 
